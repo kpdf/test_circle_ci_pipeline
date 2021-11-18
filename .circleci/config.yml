@@ -16,6 +16,7 @@ jobs:
             . helloworld/bin/activate
             pip freeze > requirements.txt
             pip install --no-cache-dir -r requirements.txt
+            pip install flask
       - run:
           name: Run Tests
           command: |
